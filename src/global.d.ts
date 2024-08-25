@@ -20,10 +20,17 @@ type StatusColumn = {
 	title: Status;
 }
 
-type Status = 
+type Status =
 	| 'Backburner'
-  | 'Ready'
-  | 'In Progress'
-  | 'Verifying'
-  | 'Waiting for Deployment'
-  | 'Deployed';
+	| 'Ready'
+	| 'In Progress'
+	| 'Verifying'
+	| 'Waiting for Deployment'
+	| 'Deployed';
+
+
+type Item = {
+	id: string;
+	name: string;
+	packed: boolean;
+};
